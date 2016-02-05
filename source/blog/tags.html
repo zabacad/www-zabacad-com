@@ -1,0 +1,14 @@
+---
+title: Tags
+layout: default
+use:
+    - posts_tags
+
+---
+<h1>Tags</h1>
+
+<ul>
+{% for tag,posts in data.posts_tags %}
+	<li class="tag"><a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>

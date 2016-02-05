@@ -1,0 +1,13 @@
+{
+    "name": "zabacad/www-zabacad-com",
+    "description": "Ian Shearin's personal website",
+    "type": "sculpin-site",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ian Shearin",
+            "email": "zabacad@gmail.com",
+            "homepage": "http://www.zabacad.com/"
+        }
+    ]
+}

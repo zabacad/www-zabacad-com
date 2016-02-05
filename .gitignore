@@ -1,0 +1,4 @@
+/.sculpin/
+/app/cache/*
+/app/logs/*
+/output_*/

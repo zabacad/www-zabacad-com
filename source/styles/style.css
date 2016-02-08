@@ -37,7 +37,6 @@ h2 a:hover {
 }
 
 .col {
-	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -53,14 +52,38 @@ h2 a:hover {
 	float: left;
 }
 
-.col-1 { width: 8.33%; } 
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-6 { width: 50%; }
-.col-8 { width: 66.66%; }
-.col-12 { width: 100%; }
 
+/* All six columns. */
+.col-2 { width: 16.66%; }  /* Six columns */
+.col-3 { width: 25%; }     /* Four columns */
+.col-4 { width: 33.33%; }  /* Three columns */
+.col-6 { width: 50%; }     /* Two columns */
+.col-8 { width: 66.66%; }  /* Two of three colunmns */
+.col-12 { width: 100%; }   /* One column */
+
+/* Maximum four columns. */
+@media only screen and (max-width: 900px) {
+	.col-2 { width: 33.33%; }
+}
+
+/* Maximum three columns. */
+@media only screen and (max-width: 720px) {
+	.col-3 { width: 50%; }
+}
+
+/* Maximum two columns. */
+@media only screen and (max-width: 480px) {
+        .col-2 { width: 50%; }
+	.col-4 { width: 100%; }
+	.col-8 { width: 100%; }
+}
+
+/* Only one column. */
+@media only screen and (max-width: 320px) {
+        .col-2 { width: 100%; }
+        .col-3 { width: 100%; }
+	.col-6 { width: 100%; }
+}
 
 
 

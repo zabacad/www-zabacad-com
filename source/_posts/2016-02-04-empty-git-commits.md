@@ -17,7 +17,7 @@ Notably, an emtpy commit still includes:
 - A commit message
 - Branch information
 
-This makes them useful for creating a remote branch to populated later, such as by someone else or by some automation.
+This makes them useful for creating a remote branch to be populated later, such as by someone else or by some automation.
 
 ```bash
 git checkout -b config-med

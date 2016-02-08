@@ -37,6 +37,7 @@ h2 a:hover {
 }
 
 .col {
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }

@@ -9,7 +9,7 @@ tags:
 In Git, it is possible create an empty commit. That is, a commit with no diff.
 
 ```bash
-git commit --allow-emtpy
+git commit --allow-empty
 ```
 
 Notably, an emtpy commit still includes:

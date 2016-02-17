@@ -1,5 +1,7 @@
 # The contents of this file are parsed and made available as
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
-title: Ian Shearin
-subtitle: Probably not an evil robot.
+title: My website
+subtitle: It's on the blag-o-sphere!
+
+#google_analytics_tracking_id: UA-0123456789-1

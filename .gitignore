@@ -1,4 +1,5 @@
 /.sculpin/
+/app/config/sculpin_site.yml
 /app/cache/*
 /app/logs/*
 /output_*/

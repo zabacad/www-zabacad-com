@@ -74,15 +74,15 @@ h2 a:hover {
 
 /* Maximum two columns. */
 @media only screen and (max-width: 480px) {
-        .col-2 { width: 50%; }
+	.col-2 { width: 50%; }
 	.col-4 { width: 100%; }
 	.col-8 { width: 100%; }
 }
 
 /* Only one column. */
 @media only screen and (max-width: 320px) {
-        .col-2 { width: 100%; }
-        .col-3 { width: 100%; }
+	.col-2 { width: 100%; }
+	.col-3 { width: 100%; }
 	.col-6 { width: 100%; }
 }
 
@@ -181,12 +181,6 @@ header .view-type {
 	padding: 0;
 	color: inherit;
 	font-size: 14px;
-}
-
-
-
-
-.main .col {
 }
 
 

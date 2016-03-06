@@ -154,10 +154,23 @@ header .view-type {
 
 
 .site-head {
-	padding: 24px 0 32px 0;
+	margin-bottom: 16px;
+	padding: 8px 0 24px 0;
 	color: #bbb;
 	background-color: #305;
 	box-shadow: 0 32px 32px 0 rgba(102,102,102,0.2);
+}
+
+.site-head .site-logo {
+	float: left;
+	height: 120px;
+	margin-bottom: -120px;
+	margin-right: 16px;
+}
+
+.site-head .site-logo img {
+	border-radius: 50%;
+	box-shadow: 0 0 32px 0 rgba(102, 102, 102, 0.2);
 }
 
 .site-head a:link, .site-head a:visited {
@@ -170,14 +183,14 @@ header .view-type {
 }
 
 .site-head .site-title {
-	margin: 0;
+	margin: 0 0 0 136px;
 	padding: 0;
 	color: inherit;
 	font-size: 32px;
 }
 
 .site-head .site-tagline {
-	margin: 0;
+	margin: 0 0 0 136px;
 	padding: 0;
 	color: inherit;
 	font-size: 14px;

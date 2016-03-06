@@ -67,19 +67,18 @@
 		</header>
 
 		<div class="main">
-			<div class="col">
-				<div class="col-12">
-					{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-				</div>
-			</div>
+			{% block layout %}
+				{% block content_wrapper %}
+					{% block content %}{% endblock %}
+				{% endblock %}
+			{% endblock %}
 		</div>
 
 		<footer class="site-footer">
 			<ul>
 				<li>&copy; {{ "now"|date("Y") }} {{ site.title }}</li>
 				<li>Built with <a href="https://sculpin.io/">Sculpin</a></li>
-				<li>Uses <a href="https://github.com/necolas/nor
-malize.css">nomalize.css</a></li>
+				<li>Uses <a href="https://github.com/necolas/normalize.css">nomalize.css</a></li>
 				<li><a href="https://github.com/zabacad/www-zabacad-com">Source</a></li>
 			</ul>
 		</footer>
@@ -87,13 +86,14 @@ malize.css">nomalize.css</a></li>
 		{% block scripts_after %}
 		{% endblock %}
 
-		{% if site.google_analytics_tracking_id %}
-		<script type="text/javascript">
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                {% if site.google_analytics_tracking_id %}
+                <script type="text/javascript">
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNo
+de.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
-			ga('send', 'pageview');
-		</script>
-		{% endif %}
+                        ga('create', '{{site.google_analytics_tracking_id}}', 'auto');
+                        ga('send', 'pageview');
+                </script>
+                {% endif %}
 	</body>
 </html>

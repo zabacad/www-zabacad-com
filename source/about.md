@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: generic
 
 ---
 # About me and this site

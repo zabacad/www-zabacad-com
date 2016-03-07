@@ -1,0 +1,10 @@
+language: php
+php:
+  - '5.5'
+  - '5.5.9'
+
+sudo: false
+
+install: wget https://download.sculpin.io/sculpin.phar && chmod +x sculpin.phar
+
+script: php sculpin.phar generate --env=dev

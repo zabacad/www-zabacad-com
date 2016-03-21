@@ -2,6 +2,11 @@
 # via `site.*`. So for example, {{ site.title }} can be used
 # in a template to get the contents of the `title` key.
 title: My website
-subtitle: It's on the blag-o-sphere!
+tagline: It's on the blag-o-sphere!
+
+# Defaults to the title.
+#copyright_holder:
+# Defaults to the current year.
+#copyright_date:
 
 #google_analytics_tracking_id: UA-0123456789-1

@@ -28,7 +28,7 @@ It gets confusing when there are multiple files involved. In such cases, it help
 Here are some examples, with the less unique files trailing and separated by some extra space:
 
 ```bash
-ln -s new_link  existing_file
+ln -s existing_file  new_link
 tar -cf new_archive  added_file_1 added_file_2
 tar -xf existing_archive
 gcc -o new_program  source_1.c source_2.c
